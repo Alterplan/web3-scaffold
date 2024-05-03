@@ -4,12 +4,19 @@
   "description": "Project scaffold for web3 development",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "local-deploy": "pnpm contracts run deploy && pnpm frontend generate",
+    "contracts": "pnpm --filter contracts",
+    "frontend": "pnpm --filter frontend"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write --ignore-unknown",
+    "packages/contracts/**/*.sol": [
+      "pnpm --filter contracts run lint"
+    ]
   },
   "author": "Alterplan",
+  "private": true,
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0",
