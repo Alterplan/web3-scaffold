@@ -97,6 +97,7 @@ export default defineConfig({
         "**.s.sol/*.json",
         "**.t.sol/*.json",
         "MockERC**.sol/**",
+        "IERC**.sol/**",
       ],
     }),
   ],
