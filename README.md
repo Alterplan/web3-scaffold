@@ -32,7 +32,7 @@ cd web3-scaffold
 3. Install the project dependencies:
 
 ```bash
-corepack install && pnpm install
+corepack enable pnpm && pnpm install
 ```
 
 4. Open a new terminal window and start the Anvil development chain:
