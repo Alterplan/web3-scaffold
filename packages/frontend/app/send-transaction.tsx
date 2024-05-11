@@ -55,7 +55,6 @@ export function SendTransaction() {
       >
         {isPending ? "Confirming..." : "Send"}
       </Button>
-      {hash && <div className="mt-4">Transaction Hash: {hash}</div>}
       {isConfirming && (
         <div className="mt-4 text-yellow-600">Waiting for confirmation...</div>
       )}

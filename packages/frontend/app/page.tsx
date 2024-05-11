@@ -11,14 +11,14 @@ function Page() {
         <ConnectButton />
         <ModeToggle />
       </div>
-      <div className="flex flex-col w-full h-[calc(100vh-7rem)] justify-center items-center space-y-12">
-        <div className="flex w-1/2 xl:w-1/3 text-center">
+      <div className="flex flex-col w-full h-full justify-center items-center space-y-12 pt-8">
+        <div className="flex w-full md:w-1/2 xl:w-1/3 text-center">
           <SendTransaction />
         </div>
-        <div className="flex w-1/2 xl:w-1/3 text-center">
+        <div className="flex w-full md:w-1/2 xl:w-1/3 text-center">
           <Counter />
         </div>
-        <div className="flex w-1/2  xl:w-1/3 text-center">
+        <div className="flex w-full md:w-1/2  xl:w-1/3 text-center">
           <Vault />
         </div>
       </div>

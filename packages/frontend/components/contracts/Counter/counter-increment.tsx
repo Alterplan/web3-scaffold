@@ -40,7 +40,6 @@ export function CounterIncrement() {
       >
         {isPending ? "Confirming..." : "Increment Counter"}
       </Button>
-      {hash && <div className="mt-4">Transaction Hash: {hash}</div>}
       {isConfirming && (
         <div className="mt-4 text-yellow-600">Waiting for confirmation...</div>
       )}
