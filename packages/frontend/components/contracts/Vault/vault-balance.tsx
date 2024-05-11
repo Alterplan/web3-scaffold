@@ -29,12 +29,16 @@ export function VaultBalance() {
 
   if (isPending) return <div>Loading...</div>;
 
-  if (error) return <div>Error: {error.shortMessage || error.message}</div>;
+  if (isConnected && error)
+    return <div>Error: {error.shortMessage || error.message}</div>;
 
   return (
     <div>
       <div>
-        Balance: {isConnected ? formatEther(balance) + " ETH" : "Not connected"}
+        Balance:{" "}
+        {isConnected && !error
+          ? formatEther(balance) + " ETH"
+          : "Not connected"}
       </div>
     </div>
   );
