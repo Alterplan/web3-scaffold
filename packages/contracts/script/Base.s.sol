@@ -42,4 +42,7 @@ abstract contract BaseScript is Script {
         _;
         vm.stopBroadcast();
     }
+
+    /// @dev A test function to avoid this contract being reported in the coverage report.
+    function test() public virtual {}
 }

@@ -12,4 +12,7 @@ contract Deploy is BaseScript {
         counter = new Counter();
         vault = new Vault();
     }
+
+    /// @dev A test function to avoid this contract being reported in the coverage report.
+    function test() public virtual override {}
 }
